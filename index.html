@@ -1,9 +1,45 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
+
 <head>
-  <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的画板</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-  
+  <canvas id='canvas'></canvas>
+  <ol id=actions class="actions">
+    <li>
+      <svg id='brush' class="icon active" aria-hidden="true">
+        <use xlink:href="#icon-marker"></use>
+      </svg>
+      <!-- <div class='arrow'>
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-arrowdown"></use>
+        </svg>
+      </div> -->
+      <!-- <div class='rangeWapper'>
+        <input type="range" id='brushRang'>
+      </div> -->
+    </li>
+    <li>
+      <svg id="eraser" class="icon" aria-hidden="true">
+        <use xlink:href="#icon-eraser"></use>
+      </svg>
+      <!-- <div class='arrow'>
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-arrowdown"></use>
+        </svg>
+      </div> -->
+    </li>
+  </ol>
+  <ol>
+
+  </ol>
+  <script src="./main.js"></script>
+  <script src="//at.alicdn.com/t/font_1118117_cosrmctak8q.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,94 @@
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+#canvas {
+  position: relative;
+  display: block;
+  background-color: white;
+  cursor: crosshair;
+}
+
+.actions {
+  position: fixed;
+  left: 20px;
+  top: 5px;
+  display: flex;
+}
+
+.actions>li {
+  width: 3em;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.actions .rangeWapper {
+  border: 1px solid #dcdde1;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: flex;
+  padding: 5px 3px;
+  border-radius: 3px;
+}
+
+.actions>li>svg {
+  width: 1.5em;
+  height: 1.5em;
+  transition: all .3s;
+}
+
+.actions .arrow {
+  position: absolute;
+  right: -5px;
+  transition: all .3s;
+  transform: rotate(180deg);
+}
+
+.actions svg.active {
+  fill: #e74c3c;
+  transform: scale(1.2);
+}
+
+.actions svg.active+.arrow svg {
+  fill: #e74c3c;
+}
+
+.colors {
+  position: fixed;
+  left: 20px;
+  top: 100px;
+}
+
+.colors .color {
+  border: 1px solid #bdc3c7;
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  margin: 10px 0;
+  transition: all .3s;
+}
+
+.colors .color.active {
+  transform: scale(1.1);
+}
