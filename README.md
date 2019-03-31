@@ -1,6 +1,6 @@
 # 画板
 
-体验一下：[https://fuzhoujohn.github.io/canvas/index.html](https://fuzhoujohn.github.io/canvas/)
+体验一下：[https://fuzhoujohn.github.io/canvas/](https://fuzhoujohn.github.io/canvas/)
 
 ## 现有功能：
 
