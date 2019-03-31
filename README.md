@@ -1,6 +1,6 @@
 # 画板
 
-体验一下：[https://fuzhoujohn.github.io/canvas/index.html](https://fuzhoujohn.github.io/canvas/index.html){:target="_blank"}
+体验一下：[https://fuzhoujohn.github.io/canvas/index.html](https://fuzhoujohn.github.io/canvas/index.html)
 
 ## 现有功能：
 
