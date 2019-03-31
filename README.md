@@ -1,5 +1,7 @@
 # 画板
 
+体验一下：[https://fuzhoujohn.github.io/canvas/index.html](https://fuzhoujohn.github.io/canvas/index.html){:target="_blank"}
+
 ## 现有功能：
 
 1. 移动端适配
