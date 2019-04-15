@@ -176,7 +176,5 @@ function listenToUser() {
       using = false
     }
   }
-
-
 }
 
