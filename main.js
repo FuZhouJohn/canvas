@@ -172,6 +172,9 @@ function listenToUser() {
     canvas.onmouseup = function (event) {
       using = false
     }
+    canvas.onmouseout = function(evnet){
+      using = false
+    }
   }
 
 
