@@ -193,7 +193,6 @@ trash.onclick = function () {
  */
 download.onclick = function () {
   let url = canvas.toDataURL('image/png')
-  console.log(url)
   let a = document.createElement('a');
   a.href = url
   a.download = 'my-painting'
