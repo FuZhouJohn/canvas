@@ -7,7 +7,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <title>我的画板</title>
   <link rel="stylesheet" href="./style.css">
-  <script src="//at.alicdn.com/t/font_1118117_jb113y9bdmo.js "></script>
+  <script src="//at.alicdn.com/t/font_1118117_6lusm9k8ati.js"></script>
 </head>
 
 <body>
@@ -17,30 +17,34 @@
       <svg id='brush' class="icon active" aria-hidden="true">
         <use xlink:href="#icon-marker"></use>
       </svg>
-      <!-- <div class='arrow'>
-        <svg class="icon" aria-hidden="true">
-          <use xlink:href="#icon-arrowdown"></use>
-        </svg>
-      </div> -->
-      <!-- <div class='rangeWapper'>
-        <input type="range" id='brushRang'>
-      </div> -->
+
     </li>
     <li>
       <svg id="eraser" class="icon" aria-hidden="true">
         <use xlink:href="#icon-eraser"></use>
       </svg>
       <!-- <div class='arrow'>
-        <svg class="icon" aria-hidden="true">
-          <use xlink:href="#icon-arrowdown"></use>
-        </svg>
+          <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-arrowdown"></use>
+            </svg>
       </div> -->
     </li>
+    <li>
+      <div class='stroke'></div>
+    </li>
   </ol>
-  <div class="trash">
-    <svg class="icon" aria-hidden="true">
-      <use xlink:href="#icon-trash"></use>
-    </svg>
+  <div class="bottomActions">
+    <div id='download' class='action'>
+      <svg class="icon" aria-actionidden="true">
+        <use xlink:href="#icon-download"></use>
+      </svg>
+    </div>
+    <div id='trash' class='action'>
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-trash"></use>
+      </svg>
+    </div>
+
   </div>
 
   <script src="./main.js"></script>

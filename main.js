@@ -87,6 +87,8 @@ function autoSetCanvasSize(canvas) {
     var pageHeight = document.documentElement.clientHeight;
     canvas.width = pageWidth;
     canvas.height = pageHeight;
+    context.fillStyle = 'white'
+    context.fillRect(0, 0, canvas.width, canvas.height)
   }
 }
 
@@ -165,16 +167,36 @@ function listenToUser() {
         context.strokeStyle = strokeStyle;
         context.fillStyle = strokeStyle;
         drawLine(lastPoint.x, lastPoint.y, newPoint.x, newPoint.y)
-        drawCircle(x, y, 2)
+        drawCircle(x, y, 2.5)
       }
       lastPoint = newPoint
     }
     canvas.onmouseup = function (event) {
       using = false
     }
-    canvas.onmouseout = function(evnet){
+    canvas.onmouseout = function (evnet) {
       using = false
     }
   }
 }
 
+/**
+ * 清屏
+ */
+trash.onclick = function () {
+  context.fillStyle = 'white'
+  context.fillRect(0, 0, canvas.width, canvas.height)
+}
+
+/**
+ * 保存作品为PNG
+ */
+download.onclick = function () {
+  let url = canvas.toDataURL('image/png')
+  console.log(url)
+  let a = document.createElement('a');
+  a.href = url
+  a.download = 'my-painting'
+  a.target = '_blank'
+  a.click()
+}
